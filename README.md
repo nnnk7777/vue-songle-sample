@@ -1,19 +1,17 @@
 # songle-sample
 
-## Project setup
-```
-npm install
-```
+vueでSongle APIを触ってみた記録
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 準備
+`npm install jquery`
 
-### Compiles and minifies for production
-```
-npm run build
-```
+なんとjQueryを使う．Vueを使い始めてから触る日が来ると思ってなかった．
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Songle APIは，`<script>`タグから読み込む．（ここのscriptタグを動的に生成する部分でjQueryを使う）
+
+
+
+### やったこと
+- 楽曲を指定秒数から再生開始
+- 100sを超えたら次の曲に自動で遷移
+- 別プロジェクトで使用するときはAPIからプレイリストデータをとってきてそれを使う
